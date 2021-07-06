@@ -147,7 +147,7 @@ runs:
             # Update the current environment:
             Get-ChildItem env: | %{ echo "$($_.Name)=$($_.Value)" >> $env:GITHUB_ENV }
         }
-      shell: pwsh
+      shell: powershell
 
 branding:
   icon: star
